@@ -29,6 +29,12 @@ module Rails6Sprockets
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
 
+    # Enable the asset pipeline
+    config.assets.enabled = true
+
+    # Stop precompile from looking for the database
+    config.assets.initialize_on_precompile = false
+
     # Don't generate system test files.
     config.generators.system_tests = nil
   end
