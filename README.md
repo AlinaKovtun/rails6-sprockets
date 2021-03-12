@@ -12,3 +12,6 @@ bundle
 RAILS_ENV=development bundle exec rake assets:precompile
 rails s
 ```
+navigate to http://localhost:3000/users 
+
+check logged console message "Hello world from coffeescript" 
