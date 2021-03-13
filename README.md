@@ -3,7 +3,7 @@
 Rails 6.0.0 App with sprockets 4 + sassc-rails. 
 
 
-## Installation
+## Installation and usage
 
 ```bash
 git clone https://github.com/AlinaKovtun/rails6-sprockets.git
