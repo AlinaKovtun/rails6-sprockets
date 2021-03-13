@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: rails6_sprockets_production
-  username: rails6_sprockets
-  password: <%= ENV['RAILS6_SPROCKETS_DATABASE_PASSWORD'] %>
+#  username: rails6_sprockets
+#  password: <%#= ENV['RAILS6_SPROCKETS_DATABASE_PASSWORD'] %>
