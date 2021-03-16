@@ -12,8 +12,8 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
-require "sprockets/railtie"
-# require "rails/test_unit/railtie"
+# require "sprockets/railtie"
+require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -30,10 +30,10 @@ module Rails6Sprockets
     # the framework and any gems in your application.
 
     # Enable the asset pipeline
-    config.assets.enabled = true
+    # config.assets.enabled = false
 
     # Stop precompile from looking for the database
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
 
     # Don't generate system test files.
     config.generators.system_tests = nil

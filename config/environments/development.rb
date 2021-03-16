@@ -46,21 +46,21 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   # Compress CSS using a preprocessor.
-  config.assets.css_compressor = :sass
+  # config.assets.css_compressor = :sass
 
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = false
-  config.assets.compress = true
+  # config.assets.debug = false
+  # config.assets.compress = false
 
   # Suppress logger output for asset requests.
-  config.assets.quiet = true
+  # config.assets.quiet = true
 
   # Generate digests for assets URLs
-  config.assets.digest = true
-
-  config.assets.prefix = "/dev-assets"
+  # config.assets.digest = true
+  #
+  # config.assets.prefix = "/dev-assets"
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
