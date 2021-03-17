@@ -72,9 +72,28 @@ with
 javascript_pack_tag 'application'
 ```
 
-### Run app
+### Run app in development mode
 ```bash
-bundle exec rails webpacker:clobber
-bundle exec rails webpacker:compile
-rails s
+RAILS_ENV=development rake db:create db:migrate
+NODE_ENV=development bundle exec rails webpacker:clobber
+NODE_ENV=development bundle exec rails webpacker:compile
+RAILS_ENV=development rails s
 ```
+navigate to http://localhost:3000/users 
+
+check logged console message "Hello World from Webpacker" 
+
+
+### Run app in production mode locally
+```bash
+rake secret
+export SECRET_KEY_BASE=output-of-rake-secret
+RAILS_ENV=production rake db:create db:migrate
+NODE_ENV=production bundle exec rails webpacker:clobber
+NODE_ENV=production bundle exec rails webpacker:compile
+tail -f log/production.log                                  #to see logs
+RAILS_ENV=production rails s
+```
+navigate to http://localhost:3000/users 
+
+check logged console message "Hello World from Webpacker" 
