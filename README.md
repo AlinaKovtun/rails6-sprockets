@@ -71,3 +71,10 @@ with
 ```ruby
 javascript_pack_tag 'application'
 ```
+
+### Run app
+```bash
+bundle exec rails webpacker:clobber
+bundle exec rails webpacker:compile
+rails s
+```
