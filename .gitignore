@@ -30,7 +30,4 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-.idea/
 .browserslistrc
-/app/.DS_Store
-.DS_Store
