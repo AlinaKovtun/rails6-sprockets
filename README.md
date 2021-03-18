@@ -59,9 +59,9 @@ bundle exec rails webpacker:install
 bundle exec rails webpacker:clobber         # to clean up packs
 yarn upgrade webpack-dev-server@2.11.1
 ```
-Remove redundant sprockets configuration in 'config/application.rb', config/environments'
+Remove redundant sprockets configuration in config/environments'
 
-Remove 'app/assets', 'config/initializers/assets.rb', 'config/initializers/asset_logging.rb'
+Remove 'config/initializers/assets.rb', 'config/initializers/asset_logging.rb'
 
 Replace 
 ```ruby
