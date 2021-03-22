@@ -6,6 +6,11 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def list
+    @users = User.all
+    return render json: @users
+  end
+
   # GET /users/1 or /users/1.json
   def show
   end
