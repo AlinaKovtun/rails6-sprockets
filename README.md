@@ -35,3 +35,9 @@ RAILS_ENV=production rails s
 navigate to http://localhost:3000/users 
 
 check logged console message "Hello world from coffeescript" 
+
+
+
+## Migrate to webpacker from sprockets
+
+branch - https://github.com/AlinaKovtun/rails6-sprockets/tree/by-webpacker-dock
